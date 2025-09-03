@@ -1,6 +1,7 @@
 import 'package:dart_application_1/encapsulation.dart';
+
 void main() {
   Encapsulation obj = Encapsulation();
-  obj.setName("Alice");
+  obj.setName("Vivi");
   print("Name: ${obj.getName()}");
 }

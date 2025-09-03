@@ -1,23 +1,19 @@
 package Java;
-abstract class Animal {
-    public abstract void animalSound(); 
 
-    public void sleep() {
-        System.out.println("Zzz");
-    }
+abstract class Shape {
+    abstract void draw();
 }
 
-class Pig extends Animal {
+class Circle extends Shape {
     @Override
-    public void animalSound() {
-        System.out.println("The pig says: wee wee");
+    void draw() {
+        System.out.println("Drawing a Circle");
     }
 }
 
 public class abstraction {
     public static void main(String[] args) {
-        Pig myPig = new Pig(); 
-        myPig.animalSound();
-        myPig.sleep();     
+        Shape s = new Circle();
+        s.draw();
     }
 }

@@ -1,14 +1,10 @@
-abstract class Animal {
-  void animalSound();
-
-  void sleep() {
-    print("Zzz");
-  }
+abstract class Shape {
+  void draw();
 }
 
-class Pig extends Animal {
+class Circle extends Shape {
   @override
-  void animalSound() {
-    print("The pig says: wee wee");
+  void draw() {
+    print("Drawing a Circle");
   }
 }
